@@ -7,8 +7,9 @@ let nrOfVisitors = 0
 app.get('/', function(req, res, next) {
     nrOfVisitors++
 
-    // Jumpts to the next middleware
-    // In this case serving the static files folder
+    // Jumps to the next middleware. In this case
+    // serving the static files folder since it's also
+    // added to the "/" path at the bottom of this file.
     next()
 })
 
